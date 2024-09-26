@@ -5,16 +5,16 @@ let salaries = {
     Ann: 160,
     Pete: 130
   };
-  let sum = 0;
+  let sum1 = 0;
   for (let key in salaries) {
-    sum += salaries[key];
+    sum1 += salaries[key];
   }
-  alert(sum);
+  alert(sum1);
 
 let calculator = {
     read() {
-        this.a = +prompt('a?', 0);
-        this.b = +prompt('b?', 0);
+        this.a = +prompt('Введите первое число', 0);
+        this.b = +prompt('Введите второе число', 0);
       },
     sum() {
         return this.a + this.b;
